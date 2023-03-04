@@ -24,19 +24,41 @@
 
 Emmet нотация:
 
-`header.header>(section.header__logo>img.header__svg)+(ul.header__contact>li.header__item-$*4)+ul.header__info>a.header__links-$*3`
+`header.header>(span.header__logo>img.header__svg)+(nav.nav>ul.header__contact>li.header__items*4>a.header__links)+ul.header__info>li.header__item*4>a.header__link`
 
 Результат:
 
 `   <header class="header">
-        <section class="header__logo"><img src="" alt="" class="header__svg"></section>
-        <ul class="header__contact">
-            <li class="header__item-1"></li>
-            <li class="header__item-2"></li>
-            <li class="header__item-3"></li>
-            <li class="header__item-4"></li>
+        <span class="header__logo">
+            <img src="" alt="" class="header__svg">
+        </span>
+        <nav class="nav">
+            <ul class="header__contact">
+                <li class="header__items">
+                    <a href="" class="header__links"></a>
+                </li>
+                <li class="header__items">
+                    <a href="" class="header__links"></a>
+                </li>
+                <li class="header__items">
+                    <a href="" class="header__links"></a>
+                </li>
+                <li class="header__items">
+                    <a href="" class="header__links"></a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="header__info"
+            <li class="header__item">
+                <a href="" class="header__link"></a>
+            </li>
+            <li class="header__item">
+                <a href="" class="header__link"></a>
+            </li>
+            <li class="header__item">
+                <a href="" class="header__link"></a>
+            </li>
         </ul>
-        <ul class="header__info"><a href="" class="header__links-1"></a><a href="" class="header__links-2"></a><a href="" class="header__links-3"></a></ul>
     </header>`
 
 
@@ -46,14 +68,17 @@ Emmet нотация:
 
 Emmet нотация:
 
-`form.form>label.form__label+input.form__input+button.form__button`
+`form.form>legend.form__legend+(label.form__label+input.form__input)*2+button.form__button`
 
 Результат:
 
-`   <form class="form">
-        <label class="form__label" for="input-email">Email</label>
-        <input class="form__input" type="email" id="input-email" name="email">
-        <button class="form__button">Submit</button>
+`   <form action="" class="form">
+        <legend class="form__legend"></legend>
+        <label for="" class="form__label"></label>
+        <input type="text" class="form__input">
+        <label for="" class="form__label"></label>
+        <input type="text" class="form__input">
+        <button class="form__button"></button>
     </form>`
 
 
@@ -63,7 +88,7 @@ Emmet нотация:
 
 Emmet нотация:
 
-`.card>span.card__sale+h2.card__title+(.card__price>p.card__cost+span.line+p.card__cost)+ul.card__desc>li.card__item*3`
+`.card>span.card__sale+h2.card__title+(.card__price>p.card__cost+span.card__line+p.card__cost)+ul.card__desc>li.card__item*3`
 
 Результат:
 
@@ -72,7 +97,7 @@ Emmet нотация:
         <h2 class="card__title"></h2>
         <div class="card__price">
             <p class="card__cost"></p>
-            <span class="line"></span>
+            <span class="card__line"></span>
             <p class="card__cost"></p>
         </div>
         <ul class="card__desc">
