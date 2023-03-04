@@ -68,12 +68,12 @@ Emmet нотация:
 
 Emmet нотация:
 
-`form.form>legend.form__legend+(label.form__label+input.form__input)*2+button.form__button`
+`form.form>h2.form__legend+(label.form__label+input.form__input)*2+button.form__button`
 
 Результат:
 
 `   <form action="" class="form">
-        <legend class="form__legend"></legend>
+        <h2 class="form__legend"></h2>
         <label for="" class="form__label"></label>
         <input type="text" class="form__input">
         <label for="" class="form__label"></label>
