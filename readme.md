@@ -24,13 +24,15 @@
 
 Emmet нотация:
 
-`header.header>(span.header__logo>img.header__svg)+(nav.nav>ul.header__contact>li.header__items*4>a.header__links)+ul.header__info>li.header__item*4>a.header__link`
+`header.header>(span.header__logo>a.header__red>img.header__svg)+(nav.nav>ul.header__contact>li.header__items*4>a.header__links)+ul.header__info>li.header__item*4>a.header__link`
 
 Результат:
 
 `   <header class="header">
         <span class="header__logo">
-            <img src="" alt="" class="header__svg">
+            <a href="" class="header__red">
+                <img src="" alt="" class="header__svg">
+            </a>
         </span>
         <nav class="nav">
             <ul class="header__contact">
